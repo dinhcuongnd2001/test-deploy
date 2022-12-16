@@ -1,0 +1,68 @@
+.contract {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  .contract-form {
+    .title {
+      color: var(--text-color);
+      text-align: left;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+    .desc {
+      margin-bottom: 10px;
+      color: #777;
+    }
+
+    .p-contract {
+      margin-bottom: 10px;
+      .custom {
+        color: #777;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .location {
+      margin-top: 30px;
+    }
+    .name,
+    .address {
+      color: #777;
+    }
+    .form {
+      width: 350px;
+    }
+    .btn-submit {
+      padding: 10px 20px;
+      background-color: var(--active);
+      color: #fff;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+  .image {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .contract {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contract-form {
+    padding: 0 5px;
+    .form {
+      width: 100% !important;
+    }
+    .btn-submit {
+      padding: 10px 40px !important;
+    }
+  }
+}

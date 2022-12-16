@@ -1,0 +1,15 @@
+B1. Build hệ thống.
+- xây dựng data trước. (Lưu duy nhất danh sách các sản phẩn lên mockAPI)
+    +) cấu trúc của một sản phẩm: { id: uuidv4(),
+                                    name: '....',
+                                    image01: '....',
+                                    image02: '....',
+                                    image03: '....',
+                                    category: [Burger, Pizza, Bread],
+                                    desc: 
+                                  }
+        ảnh lưu trên db theo đường dẫn hiện tại trong máy       
+
+-Header: xử lý khi croll (done)
+-checkout: khi khong co san phan thi hien thong bao <YOUR CART IS EMPTY >
+-tham them thong tin gio hangf

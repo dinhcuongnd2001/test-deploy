@@ -1,0 +1,121 @@
+.text-center {
+  text-align: center !important;
+}
+
+.show_menu {
+  background-color: #fff;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  top: 0;
+  box-shadow: 5px 5px 15px -5px #fde4e4;
+}
+
+.nav__wrapper {
+  margin-top: 10px;
+  height: 100px;
+  background-color: #fff;
+  .logo {
+    height: 100%;
+    line-height: 100px;
+    .link {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .image {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        //   margin-bottom: 15px;
+      }
+      .name {
+        font-size: 1rem;
+        color: var(--text-color);
+        font-weight: 600;
+      }
+    }
+  }
+  .navigation {
+    .menu {
+      .link {
+        color: var(--text-color);
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      .link:hover {
+        color: var(--hover-active);
+        transition: 0.4s;
+        scale: 1.1;
+      }
+      .active__menu {
+        color: var(--active);
+      }
+    }
+  }
+
+  .nav_icon {
+    position: relative;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .anticon :hover {
+      cursor: pointer;
+    }
+
+    .counter {
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      width: 22px;
+      height: 22px;
+      background-color: var(--active);
+      color: #fff;
+      text-align: center;
+      line-height: 20px;
+      border-radius: 50%;
+      top: -2px;
+      left: 20px;
+    }
+    .user {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100px;
+      justify-content: center;
+    }
+    .btn-login {
+      background-color: var(--active);
+      color: #fff;
+    }
+
+    .btn-register {
+      background-color: var(--text-color);
+      color: #fff;
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .nav__wrapper {
+    .logo {
+      .image {
+        width: 75px !important;
+        height: 75px !important;
+        object-fit: contain;
+      }
+      link {
+        .name {
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+  .navigation {
+    .menu {
+      gap: 1.5rem !important;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.checkout {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  .checkout-form {
+    .title {
+      color: var(--text-color);
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .form {
+      .input {
+        margin-top: 10px;
+        border-radius: 0;
+        border-bottom: 1px solid #777 !important;
+        padding: 10px 20px;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #fff;
+        outline: none;
+        border: transparent;
+        margin: 0;
+        &:focus {
+          outline: none;
+        }
+      }
+      .warning {
+        color: var(--active);
+        margin-left: 20px;
+      }
+      .submit {
+        margin-top: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: var(--active);
+        color: #fff;
+      }
+    }
+  }
+  .detail {
+    margin: auto;
+    background-color: var(--bg);
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    display: grid;
+    border-radius: 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .custom {
+    font-size: 1.8rem;
+    color: var(--active);
+  }
+  .subtotal,
+  .shipping,
+  .tax,
+  .total {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tax {
+    height: 60px;
+    border-bottom: 1px solid #777;
+  }
+}
+.typing {
+  margin-bottom: 5px;
+}
+.form-floating > label {
+  top: -12px !important;
+}
+.form-control {
+  height: calc(3rem) !important;
+  &:focus {
+    box-shadow: none !important ;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .checkout {
+    grid-template-columns: repeat(1, 1fr);
+    .form {
+      grid-row-start: 2;
+    }
+    .detail {
+      grid-row-start: 1;
+    }
+    .submit {
+      padding: 10px 40px !important;
+    }
+  }
+}

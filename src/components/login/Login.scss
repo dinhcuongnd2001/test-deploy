@@ -1,0 +1,51 @@
+.sessionLogin {
+  position: fixed;
+  z-index: 4;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  top: 0;
+}
+.formLogin {
+  border: 1px solid #777;
+  width: 350px;
+  height: 380px;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  top: calc(50vh - 175px);
+  left: calc(50% - 175px);
+  .input {
+    margin-top: 10px;
+    border: 1px solid #777;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .warning {
+    color: var(--active);
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  .noti {
+    position: absolute;
+    bottom: 65px;
+    left: calc(50px / 2);
+    width: 300px;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: var(--active);
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+    left: calc(10% / 2);
+    color: #fff;
+    &:hover {
+      opacity: 0.9;
+      color: #fff;
+      background-color: var(--active);
+    }
+  }
+}

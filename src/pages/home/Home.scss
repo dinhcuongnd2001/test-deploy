@@ -1,0 +1,441 @@
+* {
+  box-sizing: border-box;
+}
+.upcase {
+  text-transform: uppercase !important;
+}
+
+.f-14 {
+  font-size: 14px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mb-24 {
+  margin-bottom: 24px !important;
+}
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+.mb-60 {
+  margin-bottom: 60px !important;
+}
+.Banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  margin-bottom: 70px;
+  .left {
+    flex: 0 0 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    .info {
+      font-size: 20px;
+      color: var(--text-color);
+      margin: 0 0 16px;
+    }
+    .sologan {
+      font-weight: 600;
+      margin-bottom: 24px;
+      max-width: 450px;
+      line-height: 1.5;
+      .custom {
+        color: var(--active);
+      }
+    }
+    .desc {
+      color: #777777;
+      letter-spacing: 0.5px;
+      max-width: 500px;
+      line-height: 1.5;
+    }
+    .row {
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      .btn {
+        flex: 0 0 30%;
+        padding: 7px 15px;
+        border-radius: 20px;
+        font-weight: 700;
+      }
+      .bnt-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        background-color: var(--active);
+        margin-right: 30px;
+      }
+
+      .bnt-1:hover {
+        opacity: 0.9;
+      }
+      .btn-2:hover {
+        opacity: 0.9;
+        color: #777777;
+        border: 1px solid #777777;
+      }
+      .btn-2 {
+        border: 1px solid var(--active);
+        color: var(--active);
+      }
+      .service {
+        padding: 0;
+        flex: 0 0 35%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .anticon {
+          width: 30px;
+          height: 30px;
+          background-color: var(--active);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+          svg {
+            color: #fff;
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .desc {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image {
+      width: 550px;
+      height: 550px;
+      object-fit: contain;
+    }
+  }
+}
+
+.Category {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding-bottom: 60px;
+  .col {
+    padding: 30px 20px;
+    background-color: var(--bg);
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    .image {
+      margin-right: 20px;
+    }
+    .name {
+      font-family: "RocknRoll One", sans-serif !important;
+    }
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+      scale: 1.01;
+      transform: translateY(-15px);
+    }
+  }
+}
+
+.Service {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .info {
+    text-align: center;
+    .title {
+      color: var(--active);
+    }
+    .sologan {
+      font-weight: 600;
+      margin-bottom: 20px;
+      .custom {
+        color: var(--active);
+      }
+    }
+    .desc {
+      color: #777777;
+      margin-bottom: 8px;
+    }
+  }
+
+  .detail {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    .item {
+      text-align: center;
+      padding: 10px;
+      .image {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+      .name {
+        margin-top: 5px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      .desc {
+        color: #777777;
+      }
+    }
+  }
+}
+
+.Popular,
+.HotPizza {
+  padding: 60px 0;
+  .title {
+    color: var(--text-color);
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  .filter {
+    background-color: var(--active);
+    // background-color: #e8608e;
+
+    border-radius: 10px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    .btn {
+      padding: 7px 20px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      .image {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        margin-right: 5px;
+      }
+    }
+    .active {
+      background-color: #fff;
+      color: var(--active);
+    }
+  }
+
+  .product {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+  }
+}
+
+.Info {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+  .image {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+  }
+  .detail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+      font-weight: 600;
+      .custom {
+        color: var(--active);
+      }
+      margin-bottom: 20px;
+    }
+    .desc {
+      color: #777777;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+      max-width: 560px;
+    }
+    .blog {
+      margin-top: 10px;
+      .item {
+        margin: 10px 0;
+        .name {
+          display: flex;
+          align-items: center;
+          font-weight: 600;
+          .icon {
+            color: var(--active);
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.Slider {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  .info {
+    max-width: 550px;
+    .title {
+      color: var(--active);
+    }
+    .heading {
+      font-weight: 600;
+      .custom {
+        color: var(--active);
+      }
+    }
+    .desc {
+      color: #777777;
+    }
+  }
+  .image {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .Banner {
+    padding: 30px 0;
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    .left {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+    .right {
+      .image {
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+      }
+    }
+    .service {
+      margin-right: 10px;
+      .icon {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+      }
+    }
+  }
+  .Category {
+    padding: 30px 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+
+  .Service {
+    padding: 30px 0;
+    .detail {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .Popular,
+  .HotPizza {
+    padding: 30px 0;
+    .product {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .Info {
+    padding: 30px 0;
+    grid-template-columns: repeat(1, 1fr);
+    .image {
+      width: 500px;
+      height: 500px;
+      object-fit: contain;
+      margin: auto;
+    }
+    .detail {
+      justify-content: center !important ;
+      align-items: center;
+    }
+  }
+
+  .Slider {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25 px;
+    .info {
+      max-width: 500px;
+      margin: auto;
+    }
+    .image {
+      width: 500px;
+      height: 500px;
+      object-fit: contain;
+      margin: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .Banner {
+    .left {
+      flex: 0 0 45%;
+      width: 45%;
+      .service {
+        .anticon {
+          margin: 0;
+          width: 40px !important;
+          height: 30px !important;
+        }
+      }
+    }
+    .right {
+      .image {
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+      }
+    }
+  }
+  .Popular,
+  .HotPizza {
+    .product {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .Info {
+    .title {
+      color: var(--text-color);
+    }
+  }
+  .Slider {
+    margin-bottom: 20px;
+    .info {
+      max-width: 450px;
+    }
+    .image {
+      width: 500px;
+      height: 500px;
+      object-fit: contain;
+    }
+  }
+}

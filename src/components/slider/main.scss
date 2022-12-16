@@ -1,0 +1,21 @@
+.slick-slider {
+  overflow-x: clip !important;
+}
+
+.container {
+  width: 100%;
+  .slider__text {
+    color: #777;
+    line-height: 30px;
+    margin: 40px 0;
+  }
+  .slider__content {
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+  }
+}
